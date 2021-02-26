@@ -9,12 +9,12 @@ class Binomial{
   public:
 
   Binomial(float cf1 = 1.0, float cf2 = 1.0, int pwr1 = 1, int pwr2 = 1);
-  float GetCoefficient(int idx)const;
+  double GetCoefficient(int idx)const;
   int GetPower(int idx)const;
   int SetPower(int idx, int pwr);
   int Add(const Binomial other);
-  void Multiply(double f);
-  void Multiply(double coficient, int pwr);
+  void Multiply(float g);
+  void Multiply(float coficient, int pwr);
 };
 
 #endif
